@@ -10,8 +10,6 @@ import time
 def get_user_options():
     user_options = simpledialog.askstring("Options", "Please enter the options separated by commas:")
     return [option.strip() for option in user_options.split(",")]
-    # 옵션을 쉼표로 구분하여 입력하십시오
-    # Lütfen seçenekleri virgülle ayırarak girin:
 
 class DecisionWheel(tk.Canvas):
     def __init__(self, master, options, *args, **kwargs):
